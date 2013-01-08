@@ -1,6 +1,6 @@
 (library (alphaleantap)
   (export proveo do-prove-th A E)
-  (import (except (ikarus) exists) (nnf) (alphaK))
+  (import (except (rnrs) exists) (nnf) (alphaK))
 
 ;; substitution
 (define subst

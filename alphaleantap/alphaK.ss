@@ -2,8 +2,7 @@
   (export run == ==-check conde exist make-nom nom? project
           fresh hash (rename (make-tie tie))) 
 
-(import (rnrs) (rnrs records syntactic)
-        (only (ikarus) gensym))
+(import (rnrs) (rnrs records syntactic))
 
 (define-syntax run
   (syntax-rules ()

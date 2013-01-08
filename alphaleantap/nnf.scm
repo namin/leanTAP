@@ -1,6 +1,6 @@
 (library (nnf)
   (export nnf prepare A E)
-  (import (ikarus) (alphaK))
+  (import (chezscheme) (alphaK))
 
 
 ;; NNF taken from Oleg Kiselyov's translation of leanTAP
