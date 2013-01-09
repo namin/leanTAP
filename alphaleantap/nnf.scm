@@ -137,7 +137,7 @@
       [(not ,x) () (fv x)]
       [(,op ,x ,y) (member op '(and or => <=>)) (append (fv x) (fv y))]
       [(forall ,x ,t) () (remq x (fv t))]
-      [(exist ,x ,t) () (remq x (fv t))]
+      [(ex ,x ,t) () (remq x (fv t))]
       [(,f . ,args) () (apply append (map fvt args))]
       [else '()])))
 
