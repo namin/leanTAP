@@ -23,4 +23,4 @@ On the Pelletier problems, the Clojure implementation is roughly 1/3
 faster on average than the original implementation tested with Petite
 Chez Scheme.
 
-<img src="https://docs.google.com/spreadsheet/oimg?key=0Aq6lPvMWlyvwdGRtbDRYZGpmcXI1OG9RM2swNWxyc1E&oid=2&zx=oejhl3v763go" />
+[![Chart with Clojure and Scheme results on Pelletier Problems](https://docs.google.com/spreadsheet/oimg?key=0Aq6lPvMWlyvwdGRtbDRYZGpmcXI1OG9RM2swNWxyc1E&oid=2&zx=oejhl3v763go)](https://docs.google.com/spreadsheet/ccc?key=0Aq6lPvMWlyvwdGRtbDRYZGpmcXI1OG9RM2swNWxyc1E&hl=en#gid=1)
