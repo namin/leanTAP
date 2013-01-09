@@ -34,7 +34,6 @@
     `(~'forall
        ~(nom/tie y
           `(~'and
-             (~'lit (~'pos (~'app ~'f ((~'var ~y)))))
-             (~'lit (~'neg (~'app ~'f ((~'app ~'g ((~'var ~y))))))))))
+             (~'lit (~'pos (~'app ~'f (~'var ~y))))
+             (~'lit (~'neg (~'app ~'f (~'app ~'g (~'var ~y))))))))
     '(univ conj savefml savefml univ conj close)))
-

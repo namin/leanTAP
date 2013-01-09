@@ -25,8 +25,8 @@
        (== `(~'sym ~a) fml)
        (== fml out))]
     [(fresh [f d r]
-       (== `(~'app ~f ~d) fml)
-       (== `(~'app ~f ~r) out)
+       (conso 'app (lcons f d) fml)
+       (conso 'app (lcons f r) out)
        (subst-tm* d env r))]))
 
 (defn subst-tm* [tm* env out]
