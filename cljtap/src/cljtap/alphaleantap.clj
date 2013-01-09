@@ -1,7 +1,8 @@
 (ns cljtap.alphaleantap
   (:refer-clojure :exclude [==])
   (:use [clojure.core.logic :exclude [is] :as l]
-        [clojure.core.logic.nominal :exclude [fresh hash] :as nom]))
+        [clojure.core.logic.nominal :exclude [fresh hash] :as nom])
+  (:use cljtap.nnf))
 
 (declare subst subst-fmlo subst-tm* lookupo negateo proveo)
 
@@ -83,3 +84,9 @@
             (conso next unexp1 unexp)
             (conso 'savefml p1 proof)
             (proveo next unexp1 (lcons new-lit lits) env p1))]))]))
+
+(defn do-prove-th [axioms theorem]
+  (let [nf (prepare axioms theorem)]
+    (let [pr (run 1 [q] (proveo nf () () () q))]
+      (assert (not (empty? pr)) "proof failure!")
+      (first pr))))
