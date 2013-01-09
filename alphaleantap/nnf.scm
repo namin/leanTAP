@@ -113,11 +113,6 @@
             (fml-ex `(,(gensym) . ,fvars))
             (fml-sk (gfml fml-ex)))
        (nnf  fml-sk)))
-    ((ex ? ,gfml) ()
-	     ; replace quantified var with a constant. We use `sk' for clarity
-      (let* ((fml-ex `(sk ,(show-formula (gfml 'ex))))
-	     (fml-sk (gfml fml-ex))) ; replace qu. var. with skolem function
-	(nnf  fml-sk)))
 
     ; handle literals
     ((not ,l) () `(lit (neg ,(handle-lit l))))
