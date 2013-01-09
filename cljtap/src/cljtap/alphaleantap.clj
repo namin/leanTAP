@@ -1,7 +1,7 @@
 (ns cljtap.alphaleantap
   (:refer-clojure :exclude [==])
   (:use [clojure.core.logic :exclude [is] :as l]
-    [clojure.core.logic.nominal :exclude [fresh hash] :as nom]))
+        [clojure.core.logic.nominal :exclude [fresh hash] :as nom]))
 
 (declare subst subst-fmlo subst-tm* lookupo negateo proveo)
 
