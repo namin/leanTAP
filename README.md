@@ -24,3 +24,10 @@ faster on average than the original implementation tested with Petite
 Chez Scheme.
 
 [![Chart with Clojure and Scheme results on Pelletier Problems](https://docs.google.com/spreadsheet/oimg?key=0Aq6lPvMWlyvwdGRtbDRYZGpmcXI1OG9RM2swNWxyc1E&oid=2&zx=oejhl3v763go)](https://docs.google.com/spreadsheet/ccc?key=0Aq6lPvMWlyvwdGRtbDRYZGpmcXI1OG9RM2swNWxyc1E&hl=en#gid=1)
+
+Warning: the results in the
+[spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Aq6lPvMWlyvwdGRtbDRYZGpmcXI1OG9RM2swNWxyc1E&hl=en#gid=0)
+are based on a single run of each implementation. It would still be
+interesting for core.logic's sake to understand why the implementation
+in Clojure performs much worse on Problem 20 than the original one in
+Petite Chez Scheme.
