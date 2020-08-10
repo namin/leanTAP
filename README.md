@@ -13,8 +13,9 @@ The
 [`alphaleantap`](https://github.com/namin/leantap/tree/master/alphaleantap)
 directory contains the original implementation in Scheme.
 
-The [`cljtap`](https://github.com/namin/leantap/tree/master/alphaleantap)
-directory contains the implementation in Clojure.
+The [`cljtap`](https://github.com/namin/leantap/tree/master/cljtap)
+directory contains the implementation in Clojure, using
+[core.logic.nominal](https://github.com/namin/minikanren-confo).
 
 Statistics
 -----------------------------------
